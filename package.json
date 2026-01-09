@@ -1,0 +1,21 @@
+{
+  "name": "mrepo-sql",
+  "version": "1.0.4",
+  "description": "With mrepo-sql, the ability to create repositories with features that improve code readability and project scalability is added.",
+  "license": "MIT",
+  "author": "daniel_hz",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node src/index.ts",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "mariadb": "^3.4.5" 
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  }
+}

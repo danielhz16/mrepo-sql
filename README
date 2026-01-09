@@ -1,0 +1,22 @@
+# m-sql
+
+
+## Install
+npm install m-sql
+
+## Usage
+```ts
+import { BaseRepository } from "mariadb-sp-repository";
+
+const repo = new BaseRepository({
+  host: "localhost",
+  user: "root",
+  password: "123",
+  database: "test"
+});
+
+const result = await repo.execSP("SP_Product_List", {
+  params: [1]
+});
+
+
